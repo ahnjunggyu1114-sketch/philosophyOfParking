@@ -1,11 +1,14 @@
 import BotNavbar from "../components/layout/BotNavbar";
 import TopNavbar from "../components/layout/TopNavbar";
 import parkingCar from "../assets/parkingCar.png";
+import CarCard from "../components/CarCard";
+import { vehicleList } from "../data/vehicleData";
 import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
     const navigate = useNavigate();
+    const selectedVehicle = vehicleList[0];
     
     return (
         <div>
@@ -31,10 +34,23 @@ const Home = () => {
             </section>
 
             <section className="mb-[20px] px-[20px] pb-[20px]">
-                <div className="h-[134px] rounded-[10px] bg-white p-[16px]">
-                    <h2 className="text-[18px] font-bold text-[#131314]">
-                        내 차량 /* 기능 미구현 */
-                    </h2>
+                <div className="rounded-[10px] border border-[#D5E4FF] bg-white p-[16px]">
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-[14px] font-bold text-[#131314]">
+                            내 차량
+                        </h2>
+
+                        <button
+                            type="button"
+                            className="text-[12px] font-semibold text-[#B8BBC2]"
+                        >
+                            차량 변경하기
+                        </button>
+                    </div>
+
+                    <div className="mt-[10px]">
+                        <CarCard vehicle={selectedVehicle} />
+                    </div>
                 </div>
             </section>
 

@@ -1,9 +1,12 @@
 import BotNavbar from "../components/layout/BotNavbar";
 import TopNavbar from "../components/layout/TopNavbar";
+import CarCard from "../components/CarCard";
+import { vehicleList } from "../data/vehicleData";
 import { useNavigate } from "react-router-dom";
 
 const AiHelper = () => {
     const navigate = useNavigate();
+    const selectedVehicle = vehicleList[0];
 
     return (
         <div className="flex flex-col ">
@@ -14,10 +17,25 @@ const AiHelper = () => {
                 </section>
 
 
-                <section className=" h-[240px] rounded-[10px] bg-white  ">
-                    <h2 className="text-[18px] p-[16px] font-bold text-[#131314]">
-                            내 차량
-                    </h2>
+                <section className="mb-[20px] pb-[20px]">
+                    <div className="rounded-[10px] border border-[#D5E4FF] bg-white p-[16px]">
+                        <div className="flex items-center justify-between">
+                            <h2 className="text-[14px] font-bold text-[#131314]">
+                                내 차량
+                            </h2>
+
+                            <button
+                                type="button"
+                                className="text-[12px] font-semibold text-[#B8BBC2]"
+                            >
+                                차량 변경하기
+                            </button>
+                        </div>
+
+                        <div className="mt-[10px]">
+                            <CarCard vehicle={selectedVehicle} />
+                        </div>
+                    </div>
                 </section>
 
 
