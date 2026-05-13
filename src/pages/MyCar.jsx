@@ -5,7 +5,7 @@ import { vehicleList } from "../data/VehicleData";
 
 const MyCar = () => {
     return (
-        <div className="flex min-h-screen flex-col pb-[120px]">
+        <div className="flex min-h-screen flex-col pb-[180px]">
             <TopNavbar />
             <div className="px-[30px]">
                 <section className="pt-[24px] pb-[20px]">

@@ -28,7 +28,7 @@ const BottomNavbar = () => {
           <NavLink key={item.label} to={item.path}>
             {({ isActive }) => (
               <div
-                className={`flex flex-col items-center gap-[4px] text-[10px] font-semibold ${
+                className={`flex flex-col items-center gap-[4px] text-[9px] font-semibold ${
                   isActive ? 'text-[#3B82F6]' : 'text-[#C8CBD2]'
                 }`}
               >
