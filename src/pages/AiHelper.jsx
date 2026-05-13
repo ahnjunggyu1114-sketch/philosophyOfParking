@@ -1,7 +1,7 @@
 import BotNavbar from "../components/layout/BotNavbar";
 import TopNavbar from "../components/layout/TopNavbar";
 import CarCard from "../components/CarCard";
-import { vehicleList } from "../data/vehicleData";
+import { vehicleList } from "../data/VehicleData";
 import { useNavigate } from "react-router-dom";
 
 const AiHelper = () => {
