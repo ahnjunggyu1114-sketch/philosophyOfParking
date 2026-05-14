@@ -44,7 +44,7 @@ const Home = () => {
 
             <section className="mb-[20px] px-[20px] pb-[20px]">
                 <div className="rounded-[10px] border border-[#D5E4FF] bg-white p-[16px]">
-                    <div className="flex items-center px-[20px] pt-[10px]  justify-between">
+                    <div className="flex items-center px-[20px]  justify-between">
                         <h2 className="text-[14px] font-bold text-[#131314]">
                             내 차량
                         </h2>
@@ -57,7 +57,7 @@ const Home = () => {
                         </button>
                     </div>
 
-                    <div className="mt-[10px]">
+                    <div className="mt-[3px]">
                         <CarCard vehicle={selectedVehicle} />
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Home = () => {
                         <button 
                             type="button"
                             onClick={() => navigate("/ParkingHelper")}
-                            className="cursor-pointer flex flex-col items-center justify-center h-[140px] rounded-[8px] bg-[#3B82F6] p-[14px] "
+                            className="cursor-pointer flex flex-col items-center justify-center h-[180px] rounded-[8px] bg-[#3B82F6] p-[14px] "
                         >   
                             <img
                                 src={parkingCar}
@@ -90,8 +90,8 @@ const Home = () => {
                         </button>
 
                         <div className="flex flex-col gap-[8px]">
-                            <button className="relative h-[66px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white p-[12px] text-left">
-                                <div className="relative z-10">
+                            <button className="relative h-[86px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white p-[12px] text-left">
+                                <div className="relative z-0">
                                     <p className="text-[11px] font-semibold text-[#9CA0A8]">
                                         내 차 기준 주차연습
                                     </p>
@@ -106,8 +106,8 @@ const Home = () => {
                                 />
                             </button>
 
-                            <button className="relative h-[66px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white p-[12px] text-left">
-                                <div className="relative z-10">
+                            <button className="relative h-[86px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white p-[12px] text-left">
+                                <div className="relative z-0">
                                     <p className="text-[11px] font-semibold text-[#9CA0A8]">
                                         주차 공간 결정
                                     </p>
@@ -168,10 +168,10 @@ const Home = () => {
                         <div className="mt-[20px] flex flex-col gap-[12px]">
                             {lawItems.map((item) => (
                                 <div key={item} className="flex gap-[10px]">
-                                    <span className="text-[16px] font-semibold text-[#9CA0A8]">
+                                    <span className="text-[14px] font-semibold text-[#9CA0A8]">
                                         •
                                     </span>
-                                    <span className="text-[16px] font-semibold leading-[140%] text-[#9CA0A8]">
+                                    <span className="text-[14px] font-semibold leading-[140%] text-[#9CA0A8]">
                                         {item}
                                     </span>
                                 </div>
