@@ -19,8 +19,8 @@ const AiHelper = () => {
 
                 <section className="mb-[20px] pb-[20px]">
                     <div className="rounded-[10px] border border-[#D5E4FF] bg-white p-[16px]">
-                        <div className="flex items-center justify-between">
-                            <h2 className="text-[14px] font-bold text-[#131314]">
+                        <div className="flex px-[20px] pt-[10px] items-center justify-between">
+                            <h2 className="text-[14px]  font-bold text-[#131314]">
                                 내 차량
                             </h2>
 
@@ -28,7 +28,7 @@ const AiHelper = () => {
                                 type="button"
                                 className="text-[12px] font-semibold text-[#B8BBC2]"
                             >
-                                차량 변경하기
+                                차량 변경하기(작동X)
                             </button>
                         </div>
 

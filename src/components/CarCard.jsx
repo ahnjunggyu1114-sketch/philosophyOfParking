@@ -6,7 +6,7 @@ const CarCard = ({ vehicle }) => {
     }
     return (
         <div className="relative h-[200px] w-full overflow-hidden rounded-[10px] bg-white p-[20px]">
-            <div className="relative z-10">
+            <div className="relative z-0">
                 <h2 className="text-[24px] font-bold text-[#131314]">
                     {vehicle.vehicleName}
                 </h2>
