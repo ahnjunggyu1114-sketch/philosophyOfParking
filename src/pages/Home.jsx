@@ -44,7 +44,7 @@ const Home = () => {
 
             <section className="mb-[20px] px-[20px] pb-[20px]">
                 <div className="rounded-[10px] border border-[#D5E4FF] bg-white p-[16px]">
-                    <div className="flex items-center px-[20px]  justify-between">
+                    <div className="flex items-center px-[20px] pt-[10px] justify-between">
                         <h2 className="text-[14px] font-bold text-[#131314]">
                             내 차량
                         </h2>
@@ -72,14 +72,14 @@ const Home = () => {
                         <button 
                             type="button"
                             onClick={() => navigate("/ParkingHelper")}
-                            className="cursor-pointer flex flex-col items-center justify-center h-[180px] rounded-[8px] bg-[#3B82F6] p-[14px] "
+                            className="cursor-pointer flex flex-col items-center  h-[240px] rounded-[8px] bg-[#3B82F6] p-[14px] "
                         >   
                             <img
                                 src={parkingCar}
                                 alt="주차 도우미"
-                                className="mx-auto h-[90px] w-[90px] object-contain"
+                                className="mt-[12px] h-[100px] w-[100px] object-contain"
                             />
-                            <div className="flex flex-col items-center gap-[2px]">
+                            <div className="mt-[48px] flex flex-col items-center gap-[2px]">
                                 <span className="text-[12px] font-bold leading-none text-[#D8E6FD]">
                                     주차하러 가기
                                 </span>
@@ -90,35 +90,37 @@ const Home = () => {
                         </button>
 
                         <div className="flex flex-col gap-[8px]">
-                            <button className="relative h-[86px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white p-[12px] text-left">
-                                <div className="relative z-0">
-                                    <p className="text-[11px] font-semibold text-[#9CA0A8]">
+                            <button className="relative h-[116px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white text-left">
+                                <div className="absolute left-[12px] top-[10px] z-10">
+                                    <p className="text-[11px] font-semibold leading-none text-[#9CA0A8]">
                                         내 차 기준 주차연습
                                     </p>
-                                    <h3 className="mt-[2px] text-[15px] font-bold text-[#131314]">
+                                    <h3 className="mt-[6px] text-[15px] font-bold leading-none text-[#131314]">
                                         연습 시뮬레이션(작동X)
                                     </h3>
                                 </div>
+
                                 <img
                                     src={simulation}
                                     alt="연습 시뮬레이션"
-                                    className="absolute bottom-0 right-0 h-[60px] w-[90px] object-contain opacity-80"
+                                    className="absolute bottom-0 right-0 z-0 h-[70px] w-[100px] object-contain opacity-80"
                                 />
                             </button>
 
-                            <button className="relative h-[86px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white p-[12px] text-left">
-                                <div className="relative z-0">
-                                    <p className="text-[11px] font-semibold text-[#9CA0A8]">
+                            <button className="relative h-[116px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white text-left">
+                                <div className="absolute left-[12px] top-[10px] z-10">
+                                    <p className="text-[11px] font-semibold leading-none text-[#9CA0A8]">
                                         주차 공간 결정
                                     </p>
-                                    <h3 className="mt-[2px] text-[15px] font-bold text-[#131314]">
+                                    <h3 className="mt-[6px] text-[15px] font-bold leading-none text-[#131314]">
                                         주차 난이도 판단(작동X)
                                     </h3>
                                 </div>
+
                                 <img
                                     src={parkingdifficulty}
                                     alt="주차 난이도 판단"
-                                    className="absolute bottom-0 right-0 h-[60px] w-[90px] object-contain opacity-80"
+                                    className="absolute bottom-0 right-0 z-0 h-[70px] w-[100px] object-contain opacity-80"
                                 />
                             </button>
                         </div>

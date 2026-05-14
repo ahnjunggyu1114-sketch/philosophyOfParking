@@ -5,7 +5,7 @@ const CarCard = ({ vehicle }) => {
         return null;
     }
     return (
-        <div className="relative h-[200px] w-full overflow-hidden rounded-[10px] bg-white p-[20px]">
+        <div className="relative h-[200px] w-full overflow-hidden rounded-[10px] bg-white px-[20px] py-[10px]">
             <div className="relative z-0">
                 <h2 className="text-[24px] font-bold text-[#131314]">
                     {vehicle.vehicleName}
