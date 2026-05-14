@@ -24,14 +24,14 @@ const CarCard = ({ vehicle }) => {
                     <p className="text-[18px] font-bold text-[#8A8D94]">
                         차폭 <span className="mx-[6px] text-[#C8CBD2]">|</span>
                         <span className="text-[#3B82F6]">
-                            {vehicle.vehicleWidth}
+                            {vehicle.vehicleWidthText}
                         </span>
                     </p>
 
                     <p className="text-[18px] font-bold text-[#8A8D94]">
                         전장 <span className="mx-[6px] text-[#C8CBD2]">|</span>
                         <span className="text-[#3B82F6]">
-                            {vehicle.vehicleLength}
+                            {vehicle.vehicleLengthText}
                         </span>
                     </p>
                 </div>

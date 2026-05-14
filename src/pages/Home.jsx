@@ -1,6 +1,7 @@
 import BotNavbar from "../components/layout/BotNavbar";
 import TopNavbar from "../components/layout/TopNavbar";
 import parkingCar from "../assets/parkingCar.png";
+import search from "../assets/search.svg";
 import CarCard from "../components/CarCard";
 import { vehicleList } from "../data/VehicleData";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +27,7 @@ const Home = () => {
             {/* 서치바 */}
             <section className="px-[20px] pb-[20px]">
                 <div className="flex h-[44px] items-center gap-[10px] rounded-[10px] border border-[#7BA7FF] bg-white px-[14px]">
-                    <span className="text-[22px] text-[#3B82F6]">⌕</span>
+                    <img src={search} alt="검색" />
                     <p className="text-[16px] font-semibold text-[#C8CBD2]">
                         주차장 찾기 /* 기능 미구현 */
                     </p>
@@ -35,7 +36,7 @@ const Home = () => {
 
             <section className="mb-[20px] px-[20px] pb-[20px]">
                 <div className="rounded-[10px] border border-[#D5E4FF] bg-white p-[16px]">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center px-[20px] pt-[10px]  justify-between">
                         <h2 className="text-[14px] font-bold text-[#131314]">
                             내 차량
                         </h2>
