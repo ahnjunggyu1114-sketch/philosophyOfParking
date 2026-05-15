@@ -50,14 +50,14 @@ const AiHelper = () => {
                         <img
                             src={aihelp_1}
                             alt="사고시 도움"
-                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                            className="absolute right-[-15px] top-0 h-[72px] w-[105px] object-contain"
                         />
 
                         <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
                             <span className="text-[14px] font-medium text-[#D8E6FD]">
                                 사고가 났을 때
                             </span>
-                            <span className="text-[22px] font-bold leading-none text-white">
+                            <span className="text-[18px] font-bold leading-none text-white">
                                 사고시 도움
                             </span>
                         </div>
@@ -71,14 +71,14 @@ const AiHelper = () => {
                         <img
                             src={aihelp_2}
                             alt="주차 도우미"
-                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                            className="absolute right-[-15px] top-0 h-[72px] w-[105px] object-contain"
                         />
 
                         <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
                             <span className="text-[14px] font-medium text-[#D8E6FD]">
                                 주차하러 가기
                             </span>
-                            <span className="text-[22px] font-bold leading-none text-white">
+                            <span className="text-[18px] font-bold leading-none text-white">
                                 주차 도우미
                             </span>
                         </div>
@@ -88,14 +88,14 @@ const AiHelper = () => {
                         <img
                             src={aihelp_3}
                             alt="연습 시뮬레이션"
-                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                            className="absolute right-[-15px] top-0 h-[72px] w-[105px] object-contain"                        
                         />
 
                         <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
                             <span className="text-[14px] font-medium text-[#D8E6FD]">
                                 다양한 상황 연습하기
                             </span>
-                            <span className="text-[22px] font-bold leading-none text-white">
+                            <span className="text-[18px] font-bold leading-none text-white">
                                 연습 시뮬레이션
                             </span>
                         </div>
@@ -105,14 +105,14 @@ const AiHelper = () => {
                         <img
                             src={aihelp_4}
                             alt="공터 검색"
-                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                            className="absolute right-[-15px] top-0 h-[72px] w-[105px] object-contain"                        
                         />
 
                         <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
                             <span className="text-[14px] font-medium text-[#D8E6FD]">
                                 운전 연습할 장소 찾기
                             </span>
-                            <span className="text-[22px] font-bold leading-none text-white">
+                            <span className="text-[18px] font-bold leading-none text-white">
                                 공터 검색
                             </span>
                         </div>

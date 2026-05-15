@@ -13,13 +13,13 @@ const menuItems = [
 const Modal = ({ onClose }) => {
     return (
         <div className="fixed inset-0 z-50 flex">
-            <aside className="h-full w-[75%] max-w-[430px] overflow-y-auto bg-white px-[30px] py-[60px]">
+            <aside className="h-full w-[75%] max-w-[430px] overflow-y-auto bg-white px-[22px] py-[42px]">                
                 <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-[20px]">
+                    <div className="flex items-center gap-[15px]">
                         <img
                             src={profile}
                             alt="프로필"
-                            className="h-[70px] w-[70px]"
+                            className="h-[45px] w-[45px]"
                         />
 
                         <div>
@@ -49,14 +49,14 @@ const Modal = ({ onClose }) => {
                     </div>
                 </div>
 
-                <DrivingInfoCard />
+                <DrivingInfoCard variant="modal" />
 
                 <div className="mt-[48px]">
                     {menuItems.map((item) => (
                         <button
                             key={item}
                             type="button"
-                            className="flex h-[72px] w-full items-center border-t border-[#EEF1F6] text-left text-[17px] font-bold text-[#131314] last:border-b"
+                            className="flex h-[72px] w-full items-center border-t border-[#EEF1F6] text-left text-[16px] font-bold text-[#131314] last:border-b"
                         >
                             {item}
                         </button>
