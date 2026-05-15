@@ -91,7 +91,7 @@ const Home = () => {
 
                         <div className="flex flex-col gap-[8px]">
                             <button className="relative h-[116px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white text-left">
-                                <div className="absolute left-[12px] top-[10px] z-10">
+                                <div className="absolute left-[12px] top-[10px] z-0">
                                     <p className="text-[11px] font-semibold leading-none text-[#9CA0A8]">
                                         내 차 기준 주차연습
                                     </p>
@@ -108,7 +108,7 @@ const Home = () => {
                             </button>
 
                             <button className="relative h-[116px] overflow-hidden rounded-[8px] border border-[#D5E4FF] bg-white text-left">
-                                <div className="absolute left-[12px] top-[10px] z-10">
+                                <div className="absolute left-[12px] top-[10px] z-0">
                                     <p className="text-[11px] font-semibold leading-none text-[#9CA0A8]">
                                         주차 공간 결정
                                     </p>

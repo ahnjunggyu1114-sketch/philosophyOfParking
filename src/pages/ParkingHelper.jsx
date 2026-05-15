@@ -41,6 +41,9 @@ const ParkingHelper = () => {
     };
 
     const handleSaveParkingArea = (points) => {
+    /*
+    const handleSaveParkingArea = async (points) => {
+    */
         setParkingPoints(points);
 
         if (!imageFile) {
@@ -52,7 +55,7 @@ const ParkingHelper = () => {
             alert("차량 정보가 없습니다.");
             return;
         }
-
+        
         const formData = new FormData();
 
         formData.append("vehicleName", selectedVehicle.vehicleName);
@@ -60,23 +63,59 @@ const ParkingHelper = () => {
         formData.append("vehicleWidth", selectedVehicle.vehicleWidth);
         formData.append("image", imageFile);
 
+
+        
         console.log("FormData 확인");
         for (const pair of formData.entries()) {
             console.log(pair[0], pair[1]);
         }
-
+    
+        /* 여기서부터 mock data */
         alert("FormData 생성 완료! 콘솔을 확인하세요.");
         console.log("주차구역 좌표:", points);
         console.log("응답:", mockdata);
         navigate("/ParkingStep", {
             state: {
-                /* 여기 mock data */
                 result: mockdata,
                 imagePreview,
                 parkingPoints: points,
                 vehicle: selectedVehicle,
             },
         });
+        /* 여기까지 mock data */
+
+
+        /* 
+        try {
+            setIsLoading(true);
+
+            const response = await fetch(API_URL, {
+                method: "POST",
+                body: formData,
+            });
+
+            if (!response.ok) {
+                throw new Error("주차 분석 요청 실패");
+            }
+
+            const result = await response.json();
+
+            console.log("백엔드 응답:", result);
+
+            navigate("/ParkingStep", {
+                state: {
+                    result,
+                    imagePreview,
+                    parkingPoints: points,
+                    vehicle: selectedVehicle,
+                },
+            });
+        } catch (error) {
+            console.error(error);
+            alert("주차 분석 중 오류가 발생했습니다.");
+        } 
+        */
+
     };
     
 

@@ -1,6 +1,7 @@
 import BotNavbar from "../components/layout/BotNavbar";
 import TopNavbar from "../components/layout/TopNavbar";
 import CarCard from "../components/CarCard";
+import DrivingInfoCard from "../components/DrivingInfoCard";
 import { vehicleList } from "../data/VehicleData";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +10,7 @@ const AiHelper = () => {
     const selectedVehicle = vehicleList[0];
 
     return (
-        <div className="flex flex-col ">
+        <div className="flex flex-col pb-[240px] ">
             <TopNavbar />
             <div className="px-[30px]" >
                 <section className="pl-[10px] pt-[21px] pb-[20px]">
@@ -32,8 +33,9 @@ const AiHelper = () => {
                             </button>
                         </div>
 
-                        <div className="mt-[10px]">
+                        <div className=" flex flex-col mt-[10px]">
                             <CarCard vehicle={selectedVehicle} />
+                            <DrivingInfoCard />
                         </div>
                     </div>
                 </section>
@@ -75,13 +77,75 @@ const AiHelper = () => {
                 </section>
 
 
-                <section className="  h-[154px] rounded-[10px] bg-white">
-                    <p className="text-[14px] p-[16px] font-semibold text-[#131314]">
-                        최근 사용 이력 /* 기능 미구현 */
-                    </p>
-                    <h2 className="mt-[36px] p-[16px] text-[18px] font-bold text-[#131314]">
-                        차선 유지 연습 시뮬레이션
-                    </h2>
+                <section className="rounded-[10px] bg-white px-[20px] py-[24px] ">
+                    <div className="flex items-start justify-between">
+                        <div>
+                            <p className="text-[20px] font-bold text-[#131314]">
+                                최근 연습 이력(작동X)
+                            </p>
+                            <p className="mt-[6px] text-[14px] font-semibold text-[#9CA0A8]">
+                                연습했던 내용을 한번 더 복습해보세요
+                            </p>
+                        </div>
+
+                        <button
+                            type="button"
+                            className="text-[36px] font-bold leading-none text-[#131314]"
+                        >
+                            ›
+                        </button>
+                    </div>
+
+                    <div className="mt-[32px] flex flex-col">
+                        <div className="flex justify-between">
+                            <div>
+                                <p className="text-[17px] font-bold text-[#5F6369]">
+                                    차선 유지 연습
+                                </p>
+                                <p className="mt-[10px] text-[18px] font-bold text-[#3B82F6]">
+                                    ??/100점
+                                </p>
+                            </div>
+
+                            <span className="text-[16px] font-semibold text-[#9CA0A8]">
+                                5일 전
+                            </span>
+                        </div>
+
+                        <div className="my-[18px] h-[1px] w-full bg-[#EEF1F6]" />
+
+                        <div className="flex justify-between">
+                            <div>
+                                <p className="text-[17px] font-bold text-[#5F6369]">
+                                    고속도로 차선 변경 연습 (AI 제작)
+                                </p>
+                                <p className="mt-[10px] text-[18px] font-bold text-[#3B82F6]">
+                                    ??/100점
+                                </p>
+                            </div>
+
+                            <span className="text-[16px] font-semibold text-[#9CA0A8]">
+                                8일 전
+                            </span>
+                        </div>
+
+                        <div className="my-[18px] h-[1px] w-full bg-[#EEF1F6]" />
+
+                        <div className="flex justify-between">
+                            <div>
+                                <p className="text-[17px] font-bold text-[#5F6369]">
+                                    평행주차 (상수동)
+                                </p>
+                                <p className="mt-[10px] text-[18px] font-bold text-[#3B82F6]">
+                                    ??/100점
+                                </p>
+                            </div>
+
+                            <span className="text-[16px] font-semibold text-[#9CA0A8]">
+                                10일 전
+                            </span>
+                        </div>
+                    </div>
                 </section>
             </div>
 
