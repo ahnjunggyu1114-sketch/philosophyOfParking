@@ -4,6 +4,10 @@ import CarCard from "../components/CarCard";
 import DrivingInfoCard from "../components/DrivingInfoCard";
 import { vehicleList } from "../data/VehicleData";
 import { useNavigate } from "react-router-dom";
+import aihelp_1 from "../assets/aihelp_1.png";
+import aihelp_2 from "../assets/aihelp_2.png";
+import aihelp_3 from "../assets/aihelp_3.png";
+import aihelp_4 from "../assets/aihelp_4.png";
 
 const AiHelper = () => {
     const navigate = useNavigate();
@@ -42,37 +46,76 @@ const AiHelper = () => {
 
 
                 <section className="grid grid-cols-2 gap-[13px] pt-[30px] pb-[30px]">
-                    <button className="cursor-pointer flex h-[126px] items-end rounded-[10px] bg-[#3B82F6] p-[20px] ">
-                        <span className="text-[18px] font-bold text-[#131314]">
-                            사고시 도움 /* 기능 미구현 */
-                        </span>
+                    <button className="relative h-[126px] overflow-hidden rounded-[10px] bg-[#3B82F6] p-[20px] text-left">
+                        <img
+                            src={aihelp_1}
+                            alt="사고시 도움"
+                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                        />
+
+                        <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
+                            <span className="text-[14px] font-medium text-[#D8E6FD]">
+                                사고가 났을 때
+                            </span>
+                            <span className="text-[22px] font-bold leading-none text-white">
+                                사고시 도움
+                            </span>
+                        </div>
                     </button>
 
-                    <button 
+                    <button
                         type="button"
                         onClick={() => navigate("/ParkingHelper")}
-                        className="cursor-pointer flex h-[126px] items-end rounded-[10px] bg-[#3B82F6] p-[20px] "
+                        className="relative h-[126px] overflow-hidden rounded-[10px] bg-[#3B82F6] p-[20px] text-left"
                     >
-                        <div className="flex flex-col items-start gap-[2px]">
-                            <span className="block text-[16px] text-[#D8E6FD] font-medium ">
+                        <img
+                            src={aihelp_2}
+                            alt="주차 도우미"
+                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                        />
+
+                        <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
+                            <span className="text-[14px] font-medium text-[#D8E6FD]">
                                 주차하러 가기
                             </span>
-                            <span className="block text-[22px] font-bold text-white">
+                            <span className="text-[22px] font-bold leading-none text-white">
                                 주차 도우미
                             </span>
                         </div>
                     </button>
 
-                    <button className="flex h-[126px] items-end rounded-[10px] bg-[#3B82F6] p-[20px] ">
-                        <span className="text-[18px] font-bold text-[#131314]">
-                            연습 시뮬레이션 /* 기능 미구현 */
-                        </span>
+                    <button className="relative h-[126px] overflow-hidden rounded-[10px] bg-[#3B82F6] p-[20px] text-left">
+                        <img
+                            src={aihelp_3}
+                            alt="연습 시뮬레이션"
+                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                        />
+
+                        <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
+                            <span className="text-[14px] font-medium text-[#D8E6FD]">
+                                다양한 상황 연습하기
+                            </span>
+                            <span className="text-[22px] font-bold leading-none text-white">
+                                연습 시뮬레이션
+                            </span>
+                        </div>
                     </button>
 
-                    <button className="flex h-[126px] items-end rounded-[10px] bg-[#3B82F6] p-[20px] ">
-                        <span className="text-[18px] font-bold text-[#131314]">
-                            공터 찾기 /* 기능 미구현 */
-                        </span>
+                    <button className="relative h-[126px] overflow-hidden rounded-[10px] bg-[#3B82F6] p-[20px] text-left">
+                        <img
+                            src={aihelp_4}
+                            alt="공터 검색"
+                            className="absolute right-[20px] top-[16px] h-[58px] w-[90px] object-contain"
+                        />
+
+                        <div className="absolute bottom-[20px] left-[20px] flex flex-col gap-[4px]">
+                            <span className="text-[14px] font-medium text-[#D8E6FD]">
+                                운전 연습할 장소 찾기
+                            </span>
+                            <span className="text-[22px] font-bold leading-none text-white">
+                                공터 검색
+                            </span>
+                        </div>
                     </button>
                 </section>
 

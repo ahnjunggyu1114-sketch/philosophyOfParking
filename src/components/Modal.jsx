@@ -23,10 +23,10 @@ const Modal = ({ onClose }) => {
                         />
 
                         <div>
-                            <span className="block text-[24px] font-bold text-[#131314]">
+                            <span className="block text-[20px] font-bold text-[#131314]">
                                 홍길동
                             </span>
-                            <span className="mt-[4px] block text-[16px] font-semibold text-[#9CA0A8]">
+                            <span className="mt-[4px] block text-[14px] font-semibold text-[#9CA0A8]">
                                 더 뉴 아반떼 HEV
                             </span>
                         </div>
@@ -35,14 +35,14 @@ const Modal = ({ onClose }) => {
                     <div className="flex items-center gap-[16px]">
                         <button
                             type="button"
-                            className="text-[28px] text-[#B8BBC2]"
+                            className="text-[24px] text-[#B8BBC2]"
                         >
                             <img src={bell} alt="종" />
                         </button>
 
                         <button
                             type="button"
-                            className="text-[28px] text-[#B8BBC2]"
+                            className="text-[24px] text-[#B8BBC2]"
                         >
                             <img src={settings} alt="설정" />
                         </button>
@@ -56,7 +56,7 @@ const Modal = ({ onClose }) => {
                         <button
                             key={item}
                             type="button"
-                            className="flex h-[72px] w-full items-center border-t border-[#EEF1F6] text-left text-[20px] font-bold text-[#131314] last:border-b"
+                            className="flex h-[72px] w-full items-center border-t border-[#EEF1F6] text-left text-[17px] font-bold text-[#131314] last:border-b"
                         >
                             {item}
                         </button>
@@ -64,15 +64,15 @@ const Modal = ({ onClose }) => {
                 </div>
 
                 <div className="mt-[60px] -mx-[30px] bg-[#F6F8FC] px-[30px] py-[32px]">
-                    <span className="block text-[18px] font-bold text-[#9CA0A8]">
+                    <span className="block text-[15px] font-bold text-[#9CA0A8]">
                         1:1 문의하기
                     </span>
 
-                    <span className="mt-[10px] block text-[26px] font-bold text-[#76787C]">
+                    <span className="mt-[10px] block text-[22px] font-bold text-[#76787C]">
                         02-345-2345
                     </span>
 
-                    <span className="mt-[10px] block text-[16px] font-bold text-[#9CA0A8]">
+                    <span className="mt-[10px] block text-[14px] font-bold text-[#9CA0A8]">
                         (평일 오후 00:00~00:00)
                     </span>
                 </div>
