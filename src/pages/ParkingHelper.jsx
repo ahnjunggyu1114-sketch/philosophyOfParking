@@ -12,7 +12,8 @@ const ParkingHelper = () => {
     const [imagePreview, setImagePreview] = useState(null);
     const [parkingPoints, setParkingPoints] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const API_URL = "http://16.176.220.169:8080/api/parking/analyze";
+    const API_URL = "https://brothers-registered-notified-execute.trycloudflare.com/api/parking/analyze";
+
     const selectedVehicle = vehicleList[0];
 
     const handleImageUpload = (file) => {
