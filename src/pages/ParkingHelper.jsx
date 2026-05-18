@@ -12,7 +12,7 @@ const ParkingHelper = () => {
     const [imagePreview, setImagePreview] = useState(null);
     const [parkingPoints, setParkingPoints] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const API_URL = "https://isolated-plaza-broadcasting-jazz.trycloudflare.com/api/parking/analyze";
+    const API_URL = "https://api.mustashopping.shop/api/parking/analyze";
     const selectedVehicle = vehicleList[0];
 
     const handleImageUpload = (file) => {
